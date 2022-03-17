@@ -34,7 +34,7 @@ class soal1
     }
 
     private function step1(){
-        echo $this->view("soal1-1");
+        echo $this->view("form-1");
     }
 
     private function step2(){
@@ -57,7 +57,7 @@ class soal1
             $html .= "<div>";
 
         }
-        $view = $this->view('soal1-2');
+        $view = $this->view('form-2');
         echo str_replace('{{form}}',$html,$view);
     }
 
@@ -69,7 +69,7 @@ class soal1
         foreach ($data as $k => $v) {
             $html .= "<b>".str_replace("_",".",$k) . " : ". $v."</b><br>";
         }
-        $view = $this->view('soal1-3');
+        $view = $this->view('form-3');
         echo str_replace('{{hasil}}',$html,$view);
     }
 
